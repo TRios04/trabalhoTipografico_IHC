@@ -1,0 +1,43 @@
+nav {
+    --padding: 1rem;
+    --title-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+
+    position: sticky;
+
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 0 3px 10px 0 #ffffff77;
+
+    padding: var(--padding);
+
+    & .title {
+        font-family: 'MuseoModerno', cursive;
+        font-size: var(--title-size);
+        font-weight: 700;
+    }
+
+    & .options {
+        display: flex;
+        gap: 1.5rem;
+        font-family: 'Roboto', sans-serif;
+
+        & a {
+            position: relative;
+            text-decoration: none;
+            color: #ffffff;
+            transition:
+                200ms transform,
+                200ms box-shadow;
+
+            &:hover {
+                transform: translateY(5px);
+                box-shadow: 0 5px 0 0 #ffffff;
+                filter: brightness(0.8);
+            }
+        }
+    }
+}

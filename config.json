@@ -1,0 +1,19 @@
+{
+    "nav": {
+        "title": "typographic",
+        "options": [
+            {
+                "name": "Home",
+                "url": "/index.html"
+            },
+            {
+                "name": "About",
+                "url": "/about"
+            },
+            {
+                "name": "Guidelines",
+                "url": "/guidelines/index.html"
+            }
+        ]
+    }
+}

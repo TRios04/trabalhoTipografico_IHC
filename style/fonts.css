@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=MuseoModerno:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Teko:wght@400;700&display=swap');
+
+.roboto {
+    /*
+    * Thin 100
+    * Thin 100 Italic
+    * Light 300
+    * Light 300 Italic
+    * Regular 400
+    * Regular 400 Italic
+    * Bold 700
+    * Bold 700 Italic
+    */
+    font-family: 'Roboto', sans-serif;
+}
+
+.josefin-sans {
+    /*
+    * ExtraLight 200
+    * ExtraLight 200 Italic
+    * Regular 400
+    * Regular 400 Italic
+    * Bold 700
+    * Bold 700 Italic
+    */
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.teko {
+    /*
+    * Regular 400
+    * Bold 700
+    */
+    font-family: 'Teko', sans-serif;
+}
+
+.museo-moderno {
+    /*
+    * Thin 100
+    * Thin 100 Italic
+    * ExtraLight 200
+    * ExtraLight 200 Italic
+    * Regular 400
+    * Regular 400 Italic
+    * Bold 700
+    * Bold 700 Italic
+    */
+    font-family: 'MuseoModerno', cursive;
+}
