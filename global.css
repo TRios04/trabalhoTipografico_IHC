@@ -3,9 +3,12 @@
 @import "style/scroll-bar.css";
 @import "style/nav.css";
 @import "style/header.css";
+@import "style/footer.css";
 @import "style/cursor.css"; /* Cursor animation */
 
 :root {
+    --primary-color: #1a1a1a;
+    --secondary-color: #dddddd;
 }
 
 /* Reset */

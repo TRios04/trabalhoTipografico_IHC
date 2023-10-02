@@ -20,11 +20,20 @@ header {
     background-color: var(--background-color);
     color: var(--text-color);
 
+    & div {
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 3rem;
+        justify-content: space-between;
+    }
+
     /* Title */
     & h1 {
         display: inline-block;
         width: min-content;
-        height: 100%;
 
         font-size: 7rem;
     }
@@ -44,7 +53,7 @@ header {
             0.9rem 0.9rem 0 0 var(--text-color);
 
         left: 50%;
-        transform: rotate(45deg);
+        transform: rotate(45deg) translateX(-50%);
 
         animation: up-and-down 5s ease-in-out alternate-reverse infinite;
         animation-delay: 1s;

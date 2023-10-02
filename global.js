@@ -24,3 +24,21 @@ import config from '/config.json' assert { type: "json" };
         return element;
     })());
 })();
+
+// Create footer
+(() => {
+    const footer = document.getElementsByTagName("footer")[0];
+
+    config.footer.columns.forEach((column) => {
+        const col = document.createElement("div");
+        column.forEach((item) => {
+            col.appendChild((() => {
+                const element = document.createElement("a");
+                element.innerText = item.name;
+                element.href = item.url;
+                return element;
+            })());
+        });
+        footer.appendChild(col);
+    });
+})();
