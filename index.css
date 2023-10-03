@@ -60,3 +60,45 @@ header {
     }
     /* End Down arrow */
 }
+
+.quotes {
+    --header-background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    padding: 8rem;
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #ffffff 2rem,
+        #78e8ff 100%
+    );
+
+    & p {
+        width: fit-content;
+        max-width: 70%;
+        background-color: #afafaf;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        border-radius: 1rem;
+        box-shadow: 0.3rem 0.3rem 1rem -0.2rem #000000;
+
+        &:nth-child(even) {
+            align-self: flex-end;
+        }
+
+        & q {
+            display: block;
+
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 1.5rem;
+            font-style: italic;
+
+            margin-bottom: 1rem;
+        }
+
+        & cite {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2rem;
+        }
+    }
+}
