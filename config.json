@@ -1,35 +1,35 @@
 {
-    "nav": {
-        "title": "typographic",
-        "options": [
-            {
-                "name": "Home",
-                "url": "/index.html"
-            },
-            {
-                "name": "About",
-                "url": "/about"
-            },
-            {
-                "name": "Guidelines",
-                "url": "/guidelines/index.html"
-            }
-        ]
-    },
-    "footer": {
-        "columns":[
-            [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/TRios04/trabalhoTipografico_IHC"
-                }
-            ],
-            [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/TRios04/trabalhoTipografico_IHC"
-                }
-            ]
-        ]
-    }
+  "nav": {
+    "title": "typographic",
+    "options": [
+      {
+        "name": "Home",
+        "url": "/index.html"
+      },
+      {
+        "name": "About",
+        "url": "/about"
+      },
+      {
+        "name": "Guidelines",
+        "url": "/guidelines/index.html"
+      }
+    ]
+  },
+  "footer": {
+    "columns": [
+      [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/TRios04/trabalhoTipografico_IHC"
+        }
+      ],
+      [
+        {
+          "name": "About",
+          "url": "/about"
+        }
+      ]
+    ]
+  }
 }

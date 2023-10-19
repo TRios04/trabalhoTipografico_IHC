@@ -1,0 +1,35 @@
+.font {
+  --margin: 1rem;
+  --tab-size: calc(-1.5rem - 1rem);
+  position: relative;
+  margin: calc((var(--tab-size) * (-1)) + var(--margin)) var(--margin)
+    var(--margin) var(--margin);
+  background-color: #ffffff;
+
+  & * {
+    margin: 0;
+    padding: 0;
+  }
+
+  & h1 {
+    font-size: 2rem;
+  }
+
+  & p {
+    font-size: 1.2rem;
+  }
+
+  & h1,
+  h3,
+  p {
+    margin: 1.5rem;
+  }
+
+  & a {
+    margin: 3rem;
+  }
+
+  & > div:has(h1) {
+    border-bottom: 1px solid #000000;
+  }
+}
