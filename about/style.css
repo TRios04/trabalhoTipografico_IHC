@@ -1,9 +1,6 @@
 .font {
-  --margin: 1rem;
-  --tab-size: calc(-1.5rem - 1rem);
-  position: relative;
-  margin: calc((var(--tab-size) * (-1)) + var(--margin)) var(--margin)
-    var(--margin) var(--margin);
+  margin: 2rem;
+  font-size: 2rem;
   background-color: #ffffff;
 
   & * {
@@ -25,8 +22,14 @@
     margin: 1.5rem;
   }
 
+  & h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+
   & a {
-    margin: 3rem;
+    margin: 0 1.5rem 3rem 1.5rem;
+    font-size: 1.5rem;
   }
 
   & > div:has(h1) {

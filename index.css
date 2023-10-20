@@ -1,104 +1,102 @@
 @keyframes up-and-down {
-    0% {
-        translate: 0 1rem;
-    }
+  0% {
+    translate: 0 1rem;
+  }
 
-    20%, 100% {
-        translate: 0 0rem;
-    }
+  20%,
+  100% {
+    translate: 0 0rem;
+  }
 }
 
 header {
-    --background-color: #1a1a1a;
-    --text-color: #dddddd;
+  --background-color: #1a1a1a;
+  --text-color: #dddddd;
 
-    height: calc(100dvh - 17.5rem); /* 2 * 1rem(padding) + 1.5rem(title-size) + 2 * 7rem(padding) */
-    position: relative;
+  height: calc(
+    100dvh - 17.5rem
+  ); /* 2 * 1rem(padding) + 1.5rem(title-size) + 2 * 7rem(padding) */
+  position: relative;
 
-    padding: 7rem;
+  padding: 7rem;
 
-    background-color: var(--background-color);
-    color: var(--text-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
 
-    & div {
-        height: 100%;
+  & div {
+    height: 100%;
 
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        gap: 3rem;
-        justify-content: space-between;
-    }
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20rem;
+    justify-content: space-between;
+  }
 
-    /* Title */
-    & h1 {
-        display: inline-block;
-        width: min-content;
+  /* Title */
+  & h1 {
+    display: inline-block;
+    width: min-content;
 
-        font-size: 7rem;
-    }
-    /* End Title */
+    font-size: 7rem;
+  }
+  /* End Title */
 
-    /* Down arrow */
-    &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 2rem;
-        height: 2rem;
+  /* Down arrow */
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
 
-        box-shadow:
-            0.2rem 0.2rem 0 0 var(--text-color),
-            0.7rem 0.7rem 0 0 var(--background-color),
-            0.9rem 0.9rem 0 0 var(--text-color);
+    box-shadow: 0.2rem 0.2rem 0 0 var(--text-color),
+      0.7rem 0.7rem 0 0 var(--background-color),
+      0.9rem 0.9rem 0 0 var(--text-color);
 
-        left: 50%;
-        transform: rotate(45deg) translateX(-50%);
+    left: 50%;
+    transform: rotate(45deg) translateX(-50%);
 
-        animation: up-and-down 5s ease-in-out alternate-reverse infinite;
-        animation-delay: 1s;
-    }
-    /* End Down arrow */
+    animation: up-and-down 5s ease-in-out alternate-reverse infinite;
+    animation-delay: 1s;
+  }
+  /* End Down arrow */
 }
 
 .quotes {
-    --header-background-color: #1a1a1a;
-    display: flex;
-    flex-direction: column;
-    padding: 8rem;
-    background: linear-gradient(
-        180deg,
-        #ffffff 0%,
-        #ffffff 2rem,
-        #78e8ff 100%
-    );
+  --header-background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  padding: 8rem;
+  background: linear-gradient(180deg, #ffffff 0%, #ffffff 2rem, #002341 100%);
+  box-shadow: inset 0 -2.5rem 2rem -1rem var(--primary-color);
 
-    & p {
-        width: fit-content;
-        max-width: 70%;
-        background-color: #afafaf;
-        padding: 1.5rem;
-        margin: 1rem 0;
-        border-radius: 1rem;
-        box-shadow: 0.3rem 0.3rem 1rem -0.2rem #000000;
+  & p {
+    width: fit-content;
+    max-width: 70%;
+    background-color: #afafaf;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem 1rem -0.2rem #000000;
 
-        &:nth-child(even) {
-            align-self: flex-end;
-        }
-
-        & q {
-            display: block;
-
-            font-family: 'Josefin Sans', sans-serif;
-            font-size: 1.5rem;
-            font-style: italic;
-
-            margin-bottom: 1rem;
-        }
-
-        & cite {
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.2rem;
-        }
+    &:nth-child(even) {
+      align-self: flex-end;
     }
+
+    & q {
+      display: block;
+
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1.5rem;
+      font-style: italic;
+
+      margin-bottom: 1rem;
+    }
+
+    & cite {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.2rem;
+    }
+  }
 }

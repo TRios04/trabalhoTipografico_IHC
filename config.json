@@ -11,6 +11,10 @@
         "url": "/about"
       },
       {
+        "name": "Like us",
+        "url": "/like-us"
+      },
+      {
         "name": "Guidelines",
         "url": "/guidelines/index.html"
       }
