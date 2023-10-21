@@ -1,0 +1,38 @@
+.font {
+  margin: 2rem;
+  background-color: #ffffff;
+
+  & h1 {
+      font-size: 1.3rem;
+  }
+
+  & p {
+      font-size: 1rem;
+  }
+
+  & h1,
+  p {
+      margin: 1rem;
+  }
+
+  & a {
+      text-decoration: none;
+      color: inherit;
+  }
+
+  & ul {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap; 
+  }
+
+  & li {
+      width: 440px;
+      list-style-type: none;
+      margin: 10px;
+  }
+
+  & li:hover {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+}
